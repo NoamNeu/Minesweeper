@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minesweeper</title>
+  <link rel="stylesheet" href="css/minesweeper.css">
+  </head>
+
+<body onkeyup= "onKey(event)" onload="onIn()">
+    <h1>Minesweeper</h1>
+    <h2>Watch out for the bombs!</h2>
+
+    <button class="beginner" onclick="setDifficulty(1)">Beginner</button>
+    <button class="medium" onclick="setDifficulty(2)">Medium</button>
+    <button class="expert" onclick="setDifficulty(3)">Expert</button>
+</body>
+
+<table class="table">
+    <tbody class="table">
+
+    </tbody>
+</table>
+  
+<script src="./util.js"></script>
+<script src="./game.js"></script>
+
+</html>
