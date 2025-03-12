@@ -2,27 +2,25 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Minesweeper</title>
-    <link rel="stylesheet" href="css/minesweeper.css">
+  <meta charset="utf-8">
+  <title>Minesweeper</title>
+  <link rel="stylesheet" href="css/minesweeper.css">
   </head>
 
-<body>
+<body onkeyup= "onKey(event)" onload="onIn()">
     <h1>Minesweeper</h1>
     <h2>Watch out for the bombs!</h2>
-    <div id="gBoard"></div>
 
     <button class="easy" onclick="setDifficulty(1)">Beginner</button>
-   <button class="medium" onclick="setDifficulty(2)">Medium</button>
-   <button class="hard" onclick="setDifficulty(3)">Expert</button>
+    <button class="medium" onclick="setDifficulty(2)">Medium</button>
+    <button class="hard" onclick="setDifficulty(3)">Expert</button>
 </body>
 
-<table>
+<table class="board-table">
     <tbody class="board"></tbody>
 </table>
   
+<script src="./util.js"></script>
 <script src="./game.js"></script>
 
 </html>
