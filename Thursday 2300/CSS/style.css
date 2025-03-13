@@ -1,0 +1,23 @@
+body {
+    background-color: aqua;
+    text-align: center;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+table {
+  border: solid 50px grey;
+  margin: auto;
+}
+
+td {
+  border: solid 2px black;
+  padding: 15px;
+  background-color: grey;
+  transition: 0.5s;
+}
+
